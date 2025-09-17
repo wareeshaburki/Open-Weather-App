@@ -1,0 +1,206 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.main-container{
+  background-color: lightblue;
+  padding: 30px;
+  border-radius: 10px;
+  min-height: 50vh;
+  color: navy;
+  border: 2px solid slategrey;
+  max-width: 60%;
+  max-height: 80vh;
+}
+
+.heading{
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.enter-city{
+  margin: 3rem 36% 0.6rem 36%;
+  font-size: 1.25rem;
+}
+
+.city-input {
+  padding: 7px;
+  font-size: 1rem;
+  border: 1px solid lightgray;
+  margin: 1rem 16%;
+  text-align: center;
+}
+
+.city-input:focus{
+  outline: none;
+  border: 2px solid navy;
+}
+
+.temperature{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  background-color: lightslategrey;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem;
+  color: aliceblue;
+  font-size: 1.25rem;
+  border: 5px solid white;
+  box-shadow: 0 0 30px wheat;
+}
+
+.temperature-type select{
+  padding: 6px;
+  border-radius: 5px;
+  border: none;
+}
+
+.button{
+  display: flex;
+  justify-content: center;
+}
+
+.input{
+  display: flex;
+  justify-content: center;
+}
+
+.show-temp-button{
+  background-color: skyblue;
+  font-size: 1rem;
+  color: rgb(70, 43, 48);
+  padding: 8px;
+  border-radius: 5px;
+  border: 3px solid gray;
+  box-shadow: 0 0 8px gray;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.show-temp-button:hover{
+  background-color: rgb(70, 43, 48);
+  color: skyblue;
+}
+
+.final-output p{
+  text-align: center;
+}
+
+.final-output img{
+  display: block;
+  margin: 0 auto;
+  width: 2.75rem;
+  height: 2.75rem;
+}
+
+@media (max-width : 1024px) {
+  .main-container {
+    width: 75%;
+    margin: 5vh auto 5vh auto;
+  }
+  .city-input{
+    margin: 0.75rem 20%;
+  }
+  .temperature{
+    margin: 0.75rem;
+  }
+  .show-temp-button{
+    margin: 0.75rem 29%;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    width: 85%;
+    padding: 20px;
+  }
+  .enter-city {
+    margin: 2rem auto 0.6rem auto;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  .city-input {
+    width: 80%;
+    margin: 0.75rem auto;
+  }
+  .temperature {
+    font-size: 1.1rem;
+    padding: 0.75rem;
+  }
+  .show-temp-button {
+    width: 60%;
+    margin: 1rem auto;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-container {
+    width: 95%;
+    min-height: auto;
+    padding: 15px;
+  }
+  .heading {
+    font-size: 1.4rem;
+  }
+  .enter-city {
+    font-size: 1rem;
+    margin: 1.5rem auto 0.5rem auto;
+  }
+  .city-input {
+    width: 90%;
+    font-size: 0.9rem;
+    margin: 0.5rem auto;
+  }
+  .temperature {
+    font-size: 1rem;
+    gap: 15px;
+    padding: 0.5rem;
+  }
+  .temperature-type select {
+    font-size: 0.9rem;
+    padding: 4px;
+  }
+  .show-temp-button {
+    width: 80%;
+    font-size: 0.9rem;
+    margin: 1rem auto;
+  }
+  .final-output img {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .main-container {
+    width: 100%;
+    padding: 10px;
+  }
+  .heading {
+    font-size: 1.2rem;
+  }
+  .city-input {
+    font-size: 0.8rem;
+  }
+  .show-temp-button {
+    font-size: 0.8rem;
+    padding: 6px;
+  }
+  .final-output p {
+    font-size: 0.9rem;
+  }
+}

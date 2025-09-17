@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Open Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <h1 class="heading">OPEN WEATHER APP</h1>
+      <div class="box">
+        <p class="enter-city">Enter City:</p>
+        <div class="input">
+          <input type="text" class="city-input" />
+        </div>
+        <div class="temperature">
+          <p>Select Temperature Type:</p>
+          <div class="temperature-type">
+            <select name="temperature-type" class="temperature-type-select">
+              <option value="fahrenheit">Fahrenheit</option>
+              <option value="celsius">Celsius</option>
+            </select>
+          </div>
+          <div class="final-output">
+            <img src="" alt="" class="icon" />
+            <p class="temp"></p>
+            <p class="desc"></p>
+            <p class="humidity"></p>
+            <p class="wind"></p>
+          </div>
+        </div>
+        <div class="button">
+          <button class="show-temp-button">Show Temperature</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
